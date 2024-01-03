@@ -11,6 +11,7 @@ function excuse(who, action, what, when){
     let accion = Math.floor(Math.random() * action.length);
     let que = Math.floor(Math.random() * what.length);
     let cuando = Math.floor(Math.random() * when.length);
-    return who[quien] + " " +action[accion] + "" + what[que] + " " +  " " + when[cuando];
+    return who[quien] + " " +action[accion] + "" + what[que] + " " + when[cuando];
 }
 
+document.querySelector('#excuse').innerHTML = excuse(who, action, what, when)
