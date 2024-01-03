@@ -6,10 +6,11 @@ let when =  ['mientras estudiaba', 'antes de clases', 'mientras almorzaba', 'al 
 
 
 
-function excuseGenerator(quien, accion, que, cuando){
-    numQuien = Math.floor(Math.random() * quien.length);
-    numAccion = Math.floor(Math.random() * accion.length);
-    numQue = Math.floor(Math.random() * que.length);
-    numCuando = Math.floor(Math.random() * cuando.length);
-    return quien[numQuien] + " " +accion[numaccion] + "" + que[numQue] + " " +  " " + cuando[numCuando];
+function excuse(who, action, what, when){
+    let quien = Math.floor(Math.random() * who.length);
+    let accion = Math.floor(Math.random() * action.length);
+    let que = Math.floor(Math.random() * what.length);
+    let cuando = Math.floor(Math.random() * when.length);
+    return who[quien] + " " +action[accion] + "" + what[que] + " " +  " " + when[cuando];
 }
+
